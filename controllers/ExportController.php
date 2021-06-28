@@ -22,9 +22,7 @@ class ExportController{
 
 
 
-        //To define column name in first row.
         $column_names = false;
-        // run loop through each row in $customers_data
         foreach($order_array as $row) {
             if(!$column_names) {
                 echo implode("\t", array_keys($row)) . "\n";
